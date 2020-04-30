@@ -61,7 +61,6 @@ const SubCatText = styled.Text`
 export default function App() {
   const [selected, setSelected] = useState('')
   const [subCats, setSubCats] = useState<string[]>([])
-  const [data, setData] = useState('')
 
   return (
     <LinearGradient style={{ flex: 1 }} colors={['#232627', '#32373A']}>
@@ -91,7 +90,7 @@ export default function App() {
                 }}>
                   {subCats.map((subCat, i) => (
                     <SubCat key={i} onPress={() => {
-                      setData(faker[cat][subCat]())
+                      const data = faker[cat][subCat]()
                       Alert.alert(null, data, [
                         {
                           text: 'Cancel',
