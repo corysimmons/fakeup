@@ -92,7 +92,7 @@ export default function App() {
                   {subCats.map((subCat, i) => (
                     <SubCat key={i} onPress={() => {
                       setData(faker[cat][subCat]())
-                      Alert.alert(data, null, [
+                      Alert.alert(null, data, [
                         {
                           text: 'Cancel',
                           style: 'destructive'
