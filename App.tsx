@@ -9,7 +9,6 @@ const cats = [
   'commerce',
   'company',
   'database',
-  'date',
   'finance',
   'hacker',
   'image',
