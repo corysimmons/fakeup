@@ -89,7 +89,7 @@ export default function App() {
                 }}>
                   {subCats.map((subCat, i) => (
                     <SubCat key={i} onPress={() => {
-                      const data = faker[cat][subCat]()
+                      const data = String(faker[cat][subCat]())
                       Alert.alert(null, data, [
                         {
                           text: 'Cancel',
